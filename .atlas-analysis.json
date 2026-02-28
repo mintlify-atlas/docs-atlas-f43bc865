@@ -1,0 +1,151 @@
+{
+  "projectType": "data-platform",
+  "projectName": "OpenBB Platform",
+  "projectDescription": "Open-source financial data platform that integrates 30+ data providers for Python, APIs, and AI agents",
+  "theme": "sequoia",
+  "primaryColor": "#1F77B4",
+  "lightColor": "#4A9BD1",
+  "darkColor": "#0D5A8F",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Get Started",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": ["introduction", "installation", "quickstart"]
+          },
+          {
+            "group": "Configuration",
+            "pages": ["configuration/api-keys", "configuration/settings", "configuration/environment"]
+          }
+        ]
+      },
+      {
+        "tab": "Python SDK",
+        "groups": [
+          {
+            "group": "Usage",
+            "pages": ["python/usage", "python/data-models", "python/credentials"]
+          },
+          {
+            "group": "Data Extensions",
+            "pages": [
+              "python/extensions/equity",
+              "python/extensions/crypto",
+              "python/extensions/derivatives",
+              "python/extensions/economy",
+              "python/extensions/fixed-income",
+              "python/extensions/etf",
+              "python/extensions/currency",
+              "python/extensions/news",
+              "python/extensions/commodity",
+              "python/extensions/technical",
+              "python/extensions/quantitative"
+            ]
+          },
+          {
+            "group": "Examples",
+            "pages": ["python/examples/getting-data", "python/examples/charting", "python/examples/ai-integration"]
+          }
+        ]
+      },
+      {
+        "tab": "REST API",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": ["api/overview", "api/authentication", "api/quickstart"]
+          },
+          {
+            "group": "Endpoints",
+            "pages": ["api/endpoints/equity", "api/endpoints/crypto", "api/endpoints/economy", "api/endpoints/derivatives"]
+          }
+        ]
+      },
+      {
+        "tab": "Data Providers",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": ["providers/overview", "providers/comparison"]
+          },
+          {
+            "group": "Available Providers",
+            "pages": [
+              "providers/benzinga",
+              "providers/fmp",
+              "providers/fred",
+              "providers/polygon",
+              "providers/intrinio",
+              "providers/alpha-vantage",
+              "providers/yfinance",
+              "providers/tiingo",
+              "providers/oecd",
+              "providers/sec"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "CLI",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": ["cli/installation", "cli/quickstart"]
+          },
+          {
+            "group": "Usage",
+            "pages": ["cli/commands", "cli/configuration"]
+          }
+        ]
+      },
+      {
+        "tab": "Developer Guide",
+        "groups": [
+          {
+            "group": "Architecture",
+            "pages": ["developer/architecture", "developer/standardization-framework", "developer/extension-system"]
+          },
+          {
+            "group": "Building Extensions",
+            "pages": ["developer/create-extension", "developer/create-provider", "developer/testing"]
+          },
+          {
+            "group": "Contributing",
+            "pages": ["developer/contributing", "developer/code-guidelines"]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Unified Python interface to 30+ financial data providers",
+    "Standardized data models across all providers",
+    "FastAPI-based REST API for language-agnostic access",
+    "Extension system for asset classes (equity, crypto, derivatives, economy, fixed income, ETF, currency, news)",
+    "MCP server support for AI agent integration",
+    "Command-line interface for terminal access",
+    "Integration with OpenBB Workspace for enterprise analytics",
+    "Charting capabilities with Plotly",
+    "Comprehensive examples and notebooks"
+  ],
+  "publicApiSurface": [
+    "obb.equity.price.historical()",
+    "obb.equity.fundamental.income()",
+    "obb.equity.fundamental.balance()",
+    "obb.crypto.price.historical()",
+    "obb.economy.gdp()",
+    "obb.derivatives.options.chains()",
+    "obb.etf.holdings()",
+    "obb.news.world()",
+    "obb.fixedincome.rate.sofr()",
+    "obb.currency.price.historical()",
+    "obb.technical.sma()",
+    "obb.quantitative.sharpe_ratio()",
+    "REST API: /api/v1/equity/price/historical",
+    "REST API: /api/v1/crypto/price/historical",
+    "CLI: openbb equity price historical",
+    "MCP Server endpoints for AI agents"
+  ]
+}
